@@ -8,7 +8,7 @@ interface ISectionTitleProps {
 const SectionTitle: FC<ISectionTitleProps> = ({ mainTitle, subTitle }) => {
   return (
     <>
-      <h2 className="center text-primary_dark uppercase text-xl font-semibold pb-10">
+      <h2 className="center section-title uppercase text-xl font-semibold pb-10">
         {mainTitle}
       </h2>
       <h3>{subTitle}</h3>
