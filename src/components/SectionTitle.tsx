@@ -11,7 +11,7 @@ const SectionTitle: FC<ISectionTitleProps> = ({ mainTitle, subTitle }) => {
       <h2 className="center section-title uppercase text-xl font-semibold pb-10">
         {mainTitle}
       </h2>
-      <h3>{subTitle}</h3>
+      <h3 className={subTitle ? "visible" : "invisible"}>{subTitle}</h3>
     </>
   );
 };

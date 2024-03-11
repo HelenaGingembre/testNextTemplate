@@ -1,41 +1,58 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import axios from "axios";
+import Image from "next/image";
+
+// import axios from "axios";
 import { Project } from "../../../types";
+import "../../styles/projects.css";
+import getProjectsList from "../../app/(server)/project";
 
 const ListProjects = () => {
   const [projects, setProjects] = useState<Project[]>([]);
+
   useEffect(() => {
-    async function fetchProjects() {
-      const response = await axios.get("api/project");
-      setProjects(response.data as Project[]);
+    async function fetchData() {
+      try {
+        const response = await getProjectsList();
+        setProjects(response);
+      } catch (error: any) {
+        return error.message;
+      }
     }
 
-    fetchProjects();
+    fetchData();
   }, []);
 
   return (
-    <>
+    <ul className="grid">
       {projects.map((project) => {
         return (
-          <ul>
-            <li key={project.id}>
-              <div>
-                <h5>{project.title}</h5>
-                <p>category:{project.type}</p>
-                <p>{project.tech}</p>
-                <a href={project.link}>link</a>
-                {/* <a href={project.linkGitHub}>linkGitHub</a> */}
-              </div>
-              <div>
-                <img src={project.img} alt={project.title} />
-              </div>
-            </li>
-          </ul>
+          <li key={project.id} className="grid__item">
+            <div className="product">
+              <Image
+                src={project.img}
+                alt={project.title}
+                width={300}
+                height={240}
+                // onclick={onClick()} не можемо писати в серверних компонентах поведінку!!!!
+                className="product__img"
+              />
+            </div>
+            <div className="description">
+              <a className="product__title" href={project.link} target="_blank">
+                <h3>{project.title} </h3>
+              </a>
+
+              {/* <p className="product__text">{project.type}</p> */}
+              <p className="product__text">{project.tech}</p>
+
+              {/* <a href={project.linkGitHub}>linkGitHub</a> */}
+            </div>
+          </li>
         );
       })}
-    </>
+    </ul>
   );
 };
 

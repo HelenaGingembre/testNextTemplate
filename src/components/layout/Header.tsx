@@ -1,23 +1,24 @@
-import Link from "next/Link";
+"use client";
+import ScrollLink from "../ScrollLink";
 
 const Header = () => {
   return (
     <header className="flex items-center justify-between p-3">
-      {/* <button id="myBtn" title="Go to top">
-          To top
-        </button> */}
-      <Link className="text-primary_dark font-semibold text-2xl" href="#home">
+      <ScrollLink
+        className="text-primary_dark font-semibold text-2xl"
+        href="#hero"
+      >
         OGI Agency
-      </Link>
+      </ScrollLink>
 
       <nav className="flex gap-8  items-center text-primary_dark font-semibold">
-        <Link href="#">Home</Link>
-        <Link href="#about">About</Link>
-        <Link href="#portfolio">Work</Link>
-        <Link href="#contact">Contact</Link>
-        <Link href="#login" className="btn ">
-          Login
-        </Link>
+        <ScrollLink href="#hero">Home</ScrollLink>
+        <ScrollLink href="#about">About</ScrollLink>
+        <ScrollLink href="#portfolio">Work</ScrollLink>
+        <ScrollLink href="#contact" className="btn">
+          Contact
+        </ScrollLink>
+
         {/* <li className="dropdown">
           <div className="dropbtn">
             <a href="#">

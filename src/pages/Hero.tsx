@@ -1,10 +1,10 @@
 import Image from "next/image";
-import Right from "../icons/Right";
+import Right from "../components/icons/Right";
 import women from "/public/img/fille.png";
 
 const Hero = () => {
   return (
-    <section className="hero">
+    <section id="hero" className="hero">
       <div className="hero-content">
         <div className="hero-content-part px-5 py-10">
           <h1

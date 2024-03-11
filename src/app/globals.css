@@ -25,14 +25,24 @@ a:hover,
 a:visited {
   text-decoration: none;
   color: inherit;
-  webkit-transition: all 0.35s ease-in-out;
-  transition: all 0.35s ease-in-out;
 }
 img {
   max-width: 100%;
   height: auto;
 }
 
+.invisible {
+  visibility: hidden;
+  display: none;
+}
+.visible {
+  visibility: visible;
+  display: block;
+}
+main {
+  border-left: 1px solid var(--color-gray-blue);
+  border-right: 1px solid var(--color-gray-blue);
+}
 section {
   position: relative;
   width: 100%;
@@ -182,11 +192,13 @@ section.about {
   animation: gradient 16s linear infinite;
   animation-direction: alternate;
   height: auto;
-  padding: 40px 5px 60px;
+  padding: 40px 5px;
 }
-
-.portfolio p {
-  font-size: 1.2em;
-  text-align: center;
-  text-shadow: 1px 3px 5px var(--color-blue-sky);
+@keyframes gradient {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 100%;
+  }
 }

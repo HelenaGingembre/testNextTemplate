@@ -340,7 +340,7 @@
   text-align: center;
   text-shadow: 1px 3px 5px var(--gray_2);
 }*/
-.portfolio button {
+/* .portfolio button {
   border: none;
   border-radius: 30%;
   background: none;
@@ -351,7 +351,7 @@
 .portfolio button:hover {
   color: white;
   box-shadow: inset 7px 5px 46px 6px var(--color-theme);
-}
+} */
 .posts {
   display: grid;
   margin: 2% auto;
@@ -404,51 +404,7 @@
 .img-modal {
   width: 100%;
 }
-/***********************
-***section brand-slider****
-************************/
-.brand-slider {
-  height: auto;
-  padding: 2% 5%;
-  text-align: center;
-}
-.brand-slider h2 {
-  padding: 0 8px;
-  margin: 2%;
-  font-size: 3.75em;
-  letter-spacing: 0.13px;
-  line-height: 1.2em;
-  font-weight: 300;
-  font-family: "La Belle Aurore", "Bad Script", cursive;
-  color: var(--color-theme);
-}
-.swiper-container {
-  width: 100%;
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-.swiper-slide {
-  background-position: center;
-  background-size: cover;
-  width: 200px;
-  height: 150px;
-  background: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.swiper-pagination-bullet-active {
-  opacity: 1;
-  background: var(--color-theme);
-}
-@keyframes gradient {
-  0% {
-    background-position: 0%;
-  }
-  100% {
-    background-position: 100%;
-  }
-}
+
 /***********************
 ***section contact****
 ************************/
@@ -519,102 +475,57 @@ label {
 /************************
        Footer
 *************************/
-.footer-spacer {
-  z-index: -1;
-  display: block;
-  position: relative;
-  height: 572px;
-}
+
 footer {
-  background-color: var(--color-theme);
+  background-color: var(--color-primary);
   color: white;
   text-align: center;
-  position: fixed;
-  min-height: 572px;
   width: 100%;
-  bottom: 0;
-  display: block;
-  z-index: 0;
+  height: auto;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
 }
 .social-row {
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-  left: 40px;
-}
-.social-row a {
-  margin-bottom: 40px;
-  display: block;
-  padding: 15%;
-  border-radius: 50%;
-}
-.social-row a:hover {
-  color: var(--color-theme);
-  background-color: white;
-  /*width: 30px;
-    height: 30px;*/
-}
-.footer-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  display: block;
-  z-index: 20;
-}
-.footer-content span {
-  font-size: 2.5rem;
-  line-height: 1em;
-  font-style: normal;
-  margin-bottom: 40px;
-}
-.footer-content a {
-  position: relative;
-  display: block;
-  font-family: "La Belle Aurore", "Bad Script", cursive;
-  text-decoration: none;
-  text-transform: uppercase;
-  margin-top: 10%;
-  /*padding: 1rem;*/
-  color: white;
-  font-size: 1.5em;
+  display: flex;
+  justify-content: center;
+  height: auto;
+  padding: 0 10px;
+  margin: 30px 10px 10px;
 }
 
-.footer-content a:hover:after {
-  width: 35%;
-  left: 32%;
-  margin-left: 0;
+.social-row a {
+  margin-right: 10px;
 }
-.footer-content a:after {
-  content: "";
-  width: 95px;
-  height: 2px;
-  background-color: #fff;
-  position: absolute;
-  bottom: 4px;
-  left: 55%;
-  margin-left: -70px;
-  -webkit-transition: all 0.35s ease-in-out;
-  transition: all 0.35s ease-in-out;
+.social-icon:hover,
+.social-icon:focus {
+  border: 1px solid white;
+  border-radius: 50%;
 }
+
 .footer-contact-container {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  position: absolute;
-  padding: 0 10%;
-  bottom: 40px;
-  width: 100%;
-  line-height: 1em;
+  margin: 20px 10px;
+  padding: 0 20px;
+}
+.footer-contact-container a:hover,
+.footer-contact-container a:focus {
+  color: var(--color-primary-dark);
+}
+@media only screen and (max-width: 870px) {
+  .footer-contact-container {
+    flex-direction: column;
+  }
 }
 /************************
        @media
 *************************/
 
 /*@media only screen and  (max-width:870px )*/
+/*
 @media only screen and (max-width: 48em) {
   header {
   }
@@ -633,7 +544,9 @@ footer {
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
     transition: 0.5s;
   }
-  /*********stiling logo********/
+  */
+/*********stiling logo********/
+/*
   .navbar-header .logo {
     padding: 0.5rem 0.2rem;
     margin-left: 0.8rem;
@@ -695,7 +608,7 @@ footer {
     display: inline-block;
     transition: all 0.4s;
     box-sizing: border-box;
-    /*  z-index: 100;*/
+    
   }
 
   .top-container {
@@ -706,7 +619,7 @@ footer {
     height: 90vh;
   }
   .about svg {
-    /*margin-top: 40px;*/
+   
     margin-left: 10%;
     margin-right: 10%;
     width: 80%;
@@ -755,3 +668,4 @@ footer {
     flex-direction: column;
   }
 }
+*/

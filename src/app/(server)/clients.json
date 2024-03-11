@@ -1,0 +1,32 @@
+[
+  {
+    "id": "1",
+    "title": "Spartacusfunds logo",
+    "link": "http://spartacusfunds.com",
+    "img": "/img/spartacus_part.png"
+  },
+  {
+    "id": "2",
+    "title": "Beekeepers logo",
+    "link": "https://beekeepers.com.ua",
+    "img": "/img/partners_bee.png"
+  },
+  {
+    "id": "3",
+    "title": "Travel-lovers logo",
+    "link": "https://travel-lovers.org",
+    "img": "/img/partners_travel.png"
+  },
+  {
+    "id": "4",
+    "title": "DBGS logo",
+    "link": "https://dbgs.co.nz",
+    "img": "/img/partners_bdgs.png"
+  },
+  {
+    "id": "5",
+    "title": "Copro61 logo",
+    "link": "https://copro61.com",
+    "img": "/img/partners_copro61.png"
+  }
+]

@@ -7,3 +7,12 @@ export type Project = {
   type: string;
   img?: string;
 };
+
+export type Client = {
+  id: string | number;
+  title: string;
+  link: string;
+  img?: string;
+};
+
+export type ArrButtons = Array<string>;
