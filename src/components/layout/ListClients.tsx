@@ -35,7 +35,8 @@ const ListClients = () => {
               className="customer-list__link"
             >
               <Image
-                src={client.img}
+                // src={client.img}
+                src={"/public/img/partners_copro61.png"}
                 alt={client.title}
                 width={50}
                 height={50}

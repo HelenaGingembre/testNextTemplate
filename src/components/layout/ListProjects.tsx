@@ -31,7 +31,8 @@ const ListProjects = () => {
           <li key={project.id} className="grid__item">
             <div className="product">
               <Image
-                src={project.img}
+                // src={project.img}
+                src={"/public/img/dbgs_co_nz.png"}
                 alt={project.title}
                 width={300}
                 height={240}

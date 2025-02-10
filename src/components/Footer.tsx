@@ -2,17 +2,12 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { SocialIcon } from "react-social-icons";
 
-const Footer = () => {
+const Footer: React.FC = () => {
   const date = new Date();
   const year = date.getFullYear();
   return (
     <>
-      {/* <div className="footer-spacer"></div> */}
       <footer>
-        {/* <div className="footer-content">
-          <span>Are you ready to get your site?</span>
-          <a href="#contact">Contact Me</a>
-        </div> */}
         <div className="social-row">
           <SocialIcon
             target="_blank"
@@ -43,7 +38,7 @@ const Footer = () => {
           <div>
             <p>
               © {year}
-              <a href="#home"> GIH</a>
+              <a href="/"> OGI</a>
             </p>
           </div>
           <div>

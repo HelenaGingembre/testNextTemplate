@@ -9,7 +9,7 @@ export type Project = {
 };
 
 export type Client = {
-  id: string | number;
+  id: string;
   title: string;
   link: string;
   img?: string;

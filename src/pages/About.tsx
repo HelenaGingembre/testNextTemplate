@@ -1,5 +1,5 @@
 import IconLogoCss3 from "../components/icons/IconCss";
-import IconHtml5 from "../components/icons/iconHtml";
+import IconHtml5 from "../components/icons/IconHtml";
 import IconLogoJavascript from "../components/icons/IconJavascript";
 import IconLogoReact from "../components/icons/IconLogoReact";
 import IconMongodb from "../components/icons/IconMongo";

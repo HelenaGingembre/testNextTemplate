@@ -1,3 +1,5 @@
+"use client";
+import AppLink from "@/components/AppLink";
 import Image from "next/image";
 import Right from "../components/icons/Right";
 import women from "/public/img/fille.png";
@@ -151,17 +153,17 @@ const Hero = () => {
             </svg>
           </div>
           <p className="hero-text text-2xl " data-aos="fade-up">
-            My name's Olena and I’m a <br />
+            My name <q></q>s Olena and I<q></q>m a <br />
             <span className="text-accent"> Front-end Developer!</span>
           </p>
           <div className="flex gap-4 justify-evenly mt-5">
-            <button className="btn-green flex gap-2">
+            <AppLink href="#about" className="btn-green flex gap-2">
               Learn More
               <Right />
-            </button>
-            <button className="btn flex gap-2">
+            </AppLink>
+            <AppLink href="#contact" className="btn flex gap-2">
               Contact me <Right />
-            </button>
+            </AppLink>
           </div>
         </div>
         <div className="hero-content-part relative ">

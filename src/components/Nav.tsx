@@ -1,25 +1,17 @@
-"use client";
-import ScrollLink from "../ScrollLink";
+import React from "react";
+import AppLink from "./AppLink";
 
-const Header = () => {
+const Nav = () => {
   return (
-    <header className="flex items-center justify-between p-3">
-      <ScrollLink
-        className="text-primary_dark font-semibold text-2xl"
-        href="#hero"
-      >
-        OGI Agency
-      </ScrollLink>
+    <nav className="flex gap-8  items-center text-primary_dark font-semibold">
+      <AppLink href="/">Home</AppLink>
+      <AppLink href="#about">About</AppLink>
+      <AppLink href="#portfolio">Work</AppLink>
+      <AppLink href="#contact" className="btn">
+        Contact
+      </AppLink>
 
-      <nav className="flex gap-8  items-center text-primary_dark font-semibold">
-        <ScrollLink href="#hero">Home</ScrollLink>
-        <ScrollLink href="#about">About</ScrollLink>
-        <ScrollLink href="#portfolio">Work</ScrollLink>
-        <ScrollLink href="#contact" className="btn">
-          Contact
-        </ScrollLink>
-
-        {/* <li className="dropdown">
+      {/* <li className="dropdown">
           <div className="dropbtn">
             <a href="#">
               <img
@@ -59,9 +51,8 @@ const Header = () => {
           <span></span>
           <span></span>
         </div> */}
-      </nav>
-    </header>
+    </nav>
   );
 };
 
-export default Header;
+export default Nav;
