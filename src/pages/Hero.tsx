@@ -153,7 +153,7 @@ const Hero = () => {
             </svg>
           </div>
           <p className="hero-text text-2xl " data-aos="fade-up">
-            My name <q></q>s Olena and I<q></q>m a <br />
+            My name is Olena and Im a <br />
             <span className="text-accent"> Front-end Developer!</span>
           </p>
           <div className="flex gap-4 justify-evenly mt-5">
@@ -169,7 +169,8 @@ const Hero = () => {
         <div className="hero-content-part relative ">
           <Image
             src={women}
-            fill
+            width={"auto"}
+            height={"auto"}
             style={{
               objectFit: "contain", // cover, contain,
             }}

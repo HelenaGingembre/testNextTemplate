@@ -12,7 +12,7 @@ export type Client = {
   id: string;
   title: string;
   link: string;
-  img?: string;
+  img: string;
 };
 
 export type ArrButtons = Array<string>;

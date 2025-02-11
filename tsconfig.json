@@ -27,7 +27,9 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "src/components/layout/FilterListButton.module.ccs"
+    "src/components/layout/FilterListButton.module.ccs",
+
+    "@types"
   ],
   "exclude": ["node_modules"]
 }
