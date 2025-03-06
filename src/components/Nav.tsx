@@ -4,9 +4,15 @@ import AppLink from "./AppLink";
 const Nav = () => {
   return (
     <nav className="flex gap-8  items-center text-primary_dark font-semibold">
-      <AppLink href="/">Home</AppLink>
-      <AppLink href="#about">About</AppLink>
-      <AppLink href="#portfolio">Work</AppLink>
+      <AppLink href="/" className="btn">
+        Home
+      </AppLink>
+      <AppLink href="#about" className="btn">
+        About
+      </AppLink>
+      <AppLink href="#portfolio" className="btn">
+        Work
+      </AppLink>
       <AppLink href="#contact" className="btn">
         Contact
       </AppLink>
