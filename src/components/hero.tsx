@@ -1,10 +1,11 @@
 "use client";
-import AppLink from "@/components/AppLink";
-import Image from "next/image";
-import Right from "../components/icons/Right";
-import women from "/public/img/fille.png";
 
-const Hero = () => {
+import Image from "next/image";
+import Right from "./icons/Right";
+import women from "../../public/img/fille.png";
+import Link from "next/link";
+
+const Hero: React.FC = () => {
   return (
     <section id="hero" className="hero">
       <div className="hero-content">
@@ -157,20 +158,19 @@ const Hero = () => {
             <span className="text-accent"> Front-end Developer!</span>
           </p>
           <div className="flex gap-4 justify-evenly mt-5">
-            <AppLink href="#about" className="btn-green flex gap-2">
+            <Link href={"/about"} className="btn-green flex gap-2">
               Learn More
               <Right />
-            </AppLink>
-            <AppLink href="#contact" className="btn flex gap-2">
+            </Link>
+            <Link href={"/contact"} className="btn-green flex gap-2">
               Contact me <Right />
-            </AppLink>
+            </Link>
           </div>
         </div>
         <div className="hero-content-part relative ">
           <Image
+            priority
             src={women}
-            width={"auto"}
-            height={"auto"}
             style={{
               objectFit: "contain", // cover, contain,
             }}

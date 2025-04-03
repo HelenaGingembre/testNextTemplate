@@ -1,16 +1,16 @@
-import IconLogoCss3 from "../components/icons/IconCss";
-import IconHtml5 from "../components/icons/IconHtml";
-import IconLogoJavascript from "../components/icons/IconJavascript";
-import IconLogoReact from "../components/icons/IconLogoReact";
-import IconMongodb from "../components/icons/IconMongo";
-import IconNextjs from "../components/icons/IconNext";
-import IconLogoNodejs from "../components/icons/IconNode";
-import IconRedux from "../components/icons/IconRedux";
-import IconSass from "../components/icons/IconSass";
-import IconTailwind from "../components/icons/IconTailwind";
-import IconLanguageTypescript from "../components/icons/IconTypescript";
-import IconWordpress from "../components/icons/IconWordpress";
-import SectionTitle from "../components/SectionTitle";
+import IconLogoCss3 from "./icons/IconCss";
+import IconHtml5 from "./icons/IconHtml";
+import IconLogoJavascript from "./icons/IconJavascript";
+import IconLogoReact from "./icons/IconLogoReact";
+import IconMongodb from "./icons/IconMongo";
+import IconNextjs from "./icons/IconNext";
+import IconLogoNodejs from "./icons/IconNode";
+import IconRedux from "./icons/IconRedux";
+import IconSass from "./icons/IconSass";
+import IconTailwind from "./icons/IconTailwind";
+import IconLanguageTypescript from "./icons/IconTypescript";
+import IconWordpress from "./icons/IconWordpress";
+import SectionTitle from "./SectionTitle";
 
 const About = () => {
   return (

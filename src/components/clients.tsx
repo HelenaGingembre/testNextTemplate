@@ -1,5 +1,5 @@
-import ListClients from "../components/layout/ListClients";
-import SectionTitle from "../components/SectionTitle";
+import ListClients from "./layout/ListClients";
+import SectionTitle from "./SectionTitle";
 
 const Clients = () => {
   return (

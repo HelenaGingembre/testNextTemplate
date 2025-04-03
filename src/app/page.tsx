@@ -1,19 +1,14 @@
-import { NextPage } from "next";
+import Hero from "@/components/hero";
+import About from "@/components/about";
 
-import Hero from "@/pages/Hero";
-import About from "@/pages/About";
-import Portfolio from "@/pages/Portfolio";
-import Contacts from "./contacts/pages";
-import Clients from "@/pages/Clients";
+import Clients from "@/components/clients";
 
-const Home: NextPage = () => {
+const Home = () => {
   return (
     <>
       <Hero />
       <About />
-      <Portfolio />
       <Clients />
-      <Contacts />
     </>
   );
 };

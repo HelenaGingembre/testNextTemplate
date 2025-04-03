@@ -59,16 +59,16 @@ section {
   transition: all 0.35s ease-in-out;
 }
 .btn {
-  background: var(--color-green);
-}
-.btn-green {
   background: var(--color-orange);
 }
+.btn-green {
+  background: var(--color-green);
+}
 
-nav .btn-green:hover,
-nav .btn-green:focus,
-nav .btn:hover,
-nav .btn:focus {
+.btn-green:hover,
+.btn-green:focus,
+.btn:hover,
+.btn:focus {
   background: var(--color-primary-dark);
   color: var(--color-blue-sky);
 }

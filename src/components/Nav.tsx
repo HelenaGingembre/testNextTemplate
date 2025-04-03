@@ -1,21 +1,20 @@
-import React from "react";
-import AppLink from "./AppLink";
+"use client";
+import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 const Nav = () => {
+  const router = useRouter();
   return (
     <nav className="flex gap-8  items-center text-primary_dark font-semibold">
-      <AppLink href="/" className="btn">
+      <Link href="/" className="btn-green">
         Home
-      </AppLink>
-      <AppLink href="#about" className="btn">
-        About
-      </AppLink>
-      <AppLink href="#portfolio" className="btn">
-        Work
-      </AppLink>
-      <AppLink href="#contact" className="btn">
+      </Link>
+      <Link href="/projects" className="btn-green">
+        My projects
+      </Link>
+      <Link href="/contacts" className="btn-green">
         Contact
-      </AppLink>
+      </Link>
 
       {/* <li className="dropdown">
           <div className="dropbtn">
